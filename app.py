@@ -41,6 +41,7 @@ def main():
         st.markdown("### GPT 생성 결과")
         with st.spinner("wait for it"):
             # GPT 결과 box 생성
+            st.markdown("---")
             answer_result = st.empty()
             answer_result.info("잠시만 기다려 주세요")
 
@@ -51,14 +52,10 @@ def main():
                 for result in results:
                     st.write(card(title=result[3], context=result[2]), unsafe_allow_html=True)
                 context = results[0][2]
-                answer_text = odqa.gpt_answer(search, context)
+                odqa.gpt_answer(search, context, answer_result)
             else:
                 context = ""
-                answer_text = odqa.gpt_answer(search, context)
-
-        # 정답 작성
-        answer_result.write(answer(answer_text), unsafe_allow_html=True)
-
+                odqa.gpt_answer(search, context, answer_result)
 
 if __name__ == '__main__':
     main()
