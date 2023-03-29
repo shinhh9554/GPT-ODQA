@@ -13,9 +13,9 @@ Open AI의 GPT3.5 API를 사용한 ODQA 시스템
 * 시스템 UI는 Streamlit을 사용하여 제작하였습니다.
 * [데모 시스템](http://icl.kyonggi.ac.kr:5003)
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/57481142/228482180-bc550bc9-9c22-478e-a172-8816db1bd14e.gif">
-</p>
+![ezgif com-video-to-gif-3](https://user-images.githubusercontent.com/57481142/228516536-3b4d91d7-3079-499f-8dd7-ebe9e0d14023.gif)
+![ezgif com-video-to-gif-2](https://user-images.githubusercontent.com/57481142/228514555-b3cb5fbd-a908-4443-99af-ee48763f3019.gif)
+
 
 ## 3. 기타사항
 * 검색엔진에 동의어 및 사용자 정의 사전은 별도로 구축하셔서 Elasticsearch Config에 업로드 하셔야 합니다.
@@ -45,4 +45,5 @@ Open AI의 GPT3.5 API를 사용한 ODQA 시스템
 * 재순위화 모델은 [여기서]() 다운로드 받을 수 있으며, 모델의 inference 부분은 inference.py 코드를 확인하시면 됩니다.
 
 ## 4. Reference
+* ### [es-gpt](https://github.com/hunkim/es-gpt)
 
